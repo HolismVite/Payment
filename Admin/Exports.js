@@ -1,3 +1,4 @@
+import PaymentIcon from '@mui/icons-material/Payment';
 import Transactions from './Transaction/List'
 
 const PaymentRoutes = [
@@ -9,8 +10,16 @@ const PaymentRoutes = [
 
 const PaymentMenu = [
     {
-
+        title: "Payment",
+        icon: PaymentIcon,
+        children: [
+            {
+                title: "Transactions",
+                url: "/transactions"
+            }
+        ]
     }
 ]
 
 export { PaymentRoutes }
+export { PaymentMenu }
