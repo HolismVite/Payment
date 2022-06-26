@@ -1,4 +1,11 @@
-import { List } from '@List'
+import { List, Text } from '@List'
+
+const filters = <>
+    <Text
+        column='UniqueCode'
+        placeholder='Unique key'
+    />
+</>
 
 const headers = <>
     <th>Unique Code</th>
@@ -12,8 +19,9 @@ const row = (item) => <>
 
 const Transactions = () => {
     return <List
-        title='Transactions5'
+        title='Transactions'
         entityType='Transaction'
+        filters={filters}
         headers={headers}
         row={row}
     />
