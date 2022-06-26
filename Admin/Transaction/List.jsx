@@ -12,7 +12,7 @@ const row = (item) => <>
 
 const Transactions = () => {
     return <List
-        title='Transactions1'
+        title='Transactions5'
         entityType='Transaction'
         headers={headers}
         row={row}
