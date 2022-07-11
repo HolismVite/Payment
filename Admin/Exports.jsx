@@ -21,5 +21,5 @@ const PaymentMenu = [
     }
 ]
 
-export { PaymentRoutes }
 export { PaymentMenu }
+export { PaymentRoutes }
